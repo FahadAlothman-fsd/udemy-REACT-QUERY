@@ -3,5 +3,17 @@
   "trailingComma": "all",
   "singleQuote": true,
   "printWidth": 80,
-  "tabWidth": 2
+  "tabWidth": 2,
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": { "es6": true },
+  "plugins": ["simple-import-sort", "import"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  }
 }

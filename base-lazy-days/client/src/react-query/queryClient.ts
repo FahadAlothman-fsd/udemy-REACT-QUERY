@@ -27,5 +27,8 @@ export const queryClient = new QueryClient({
       cacheTime: 900000, // 15 minutes
       staleTime: 600000, // 10 minutes
     },
+    mutations: {
+      onError: queryErrorHandler,
+    },
   },
 });
